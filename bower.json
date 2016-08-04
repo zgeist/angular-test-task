@@ -1,0 +1,21 @@
+{
+  "name": "angular-test-task",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Slava Checkanovskiy <izgeist.check@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/zgeist/angular-test-task",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-mocks": "1.5.8"
+  }
+}

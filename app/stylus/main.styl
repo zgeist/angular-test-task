@@ -1,0 +1,78 @@
+$color__main      = #CFD0D2
+$color__alt       = #FD7200
+$color__viewport  = #181818
+
+body
+  margin 0
+  font-family 'Roboto', sans-serif
+  font-weight 100
+
+.calculator
+  max-width 300px
+  margin auto
+  position absolute
+  top 50%
+  left 50%
+  transform translate(-50%, -50%)
+
+  *
+    transition all 220ms ease-out
+
+  .viewport
+    background $color__viewport
+    overflow auto
+    box-shadow 0 0 20px rgba(#000, .5)
+
+  .keyboard
+    overflow auto
+
+  .output
+    color #fff
+    text-align right
+    font-size 45px
+    padding 10px
+    height 65px
+    word-break break-all
+    text-overflow ellipsis
+    overflow hidden
+
+    &.small
+      font-size 25px
+
+  .numbers
+    float left
+    width 225px
+
+  .operators
+    float left
+    width 75px
+
+  .button
+    width 75px
+    height 75px
+    background $color__main
+    display block
+    font-size 30px
+    float left
+    padding 0
+    outline none
+    border 1px solid darken(#CFD0D2, 20%)
+    box-sizing border-box
+    font-family inherit
+
+    &.wide
+      width 150px
+
+    &:hover
+      background darken( $color__main, 10% )
+
+    &:active
+      color #fff
+      background $color__alt
+
+    &.alternate
+      background $color__alt
+      color #fff
+      border 1px solid darken($color__alt, 20%)
+      &:hover
+        background darken( $color__alt, 10% )
