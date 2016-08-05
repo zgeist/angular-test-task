@@ -2,6 +2,17 @@
 
 It simple app for test task. Using TypeScript & Angular 1.5.x . Styles for provided stylus preprocessor. For unit testing I used Karma test
 
+Gulp and Karma must be installed global
+
+```
+$ npm install -g gulp-cli
+```
+
+
+```
+$ npm install -g karma-cli
+```
+
 ## Using manual
 
 Clone from repository to your folder 'your-folder/angular-test-task'
@@ -10,31 +21,45 @@ Clone from repository to your folder 'your-folder/angular-test-task'
 
 Install node modules
 
-`$ npm install`
+```
+$ npm install
+```
 
 Install bower components
 
-`$ bower install`
+```
+$ bower install
+```
 
 ### Run gulp bundler
 
-`$ gulp`
+```
+$ gulp
+```
 
 Compile typescript
 
-`$ gulp compile-js`
+```
+$ gulp compile-js
+```
 
 Compile stylus
 
-`$ gulp compile-css`
+```
+$ gulp compile-css
+```
 
 ### Run unit tests
 
-`$ gulp app:test`
+```
+$ gulp app:test
+```
 
 or
 
-`$ npm run test`
+```
+$ npm run test
+```
 
 ### Have a nice day!
 
